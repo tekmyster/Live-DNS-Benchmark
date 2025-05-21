@@ -1,4 +1,2 @@
-cptnyc.com
-mrdreamer.com
-touro.edu
-vpn.touro.edu
+google.com
+microsoft.com
