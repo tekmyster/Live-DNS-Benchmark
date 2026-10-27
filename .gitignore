@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.test-tmp/
+pytest-cache-files-*/
+*.pyc
+*.egg-info/
+build/
+dist/
+dns_benchmark*.xlsx
+dns_benchmark*.csv
+
+.gui-test-tmp/

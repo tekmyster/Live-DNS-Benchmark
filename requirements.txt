@@ -1,0 +1,5 @@
+dnspython>=2.8,<3
+matplotlib>=3.9,<4
+Pillow>=10.4,<13
+ping3>=4,<6
+XlsxWriter>=3.2,<4

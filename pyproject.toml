@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "live-dns-benchmark"
+version = "0.2.0"
+description = "Compare DNS resolver latency and reliability"
+requires-python = ">=3.10"
+dependencies = ["dnspython>=2.8,<3"]
+
+[project.optional-dependencies]
+excel = ["XlsxWriter>=3.2,<4"]
+gui = ["matplotlib>=3.9,<4", "Pillow>=10.4,<13", "ping3>=4,<6"]
+test = ["pytest>=8,<10", "XlsxWriter>=3.2,<4"]
+
+[project.scripts]
+dns-benchmark-cli = "dns_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dns_benchmark*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
